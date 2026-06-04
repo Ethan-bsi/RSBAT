@@ -5,8 +5,8 @@ const steps = [
   { title: "Prise de contact", desc: "Échange initial sur vos besoins." },
   { title: "Étude du projet", desc: "Visite sur site et analyse technique." },
   { title: "Devis gratuit", desc: "Proposition détaillée et chiffrée." },
-  { title: "Réalisation", desc: "Exécution par nos artisans experts." },
-  { title: "Livraison", desc: "Réception avec finitions impeccables." }
+  { title: "Réalisation", desc: "Exécution par nos équuipes." },
+  { title: "Livraison", desc: "Réception après levée des réserves." }
 ];
 
 export function Process() {
