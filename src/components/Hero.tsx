@@ -57,21 +57,11 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="mt-16 lg:mt-24 flex items-center justify-between lg:justify-start lg:gap-16 border-t border-white/5 pt-8"
         >
-          <div className="flex flex-col">
-            <span className="text-3xl md:text-4xl font-display font-bold text-white mb-1">10+</span>
-            <span className="text-xs uppercase font-sans tracking-widest text-muted-foreground">Années</span>
-          </div>
-          <div className="w-[1px] h-10 bg-white/10 hidden sm:block" />
-          <div className="flex flex-col">
-            <span className="text-3xl md:text-4xl font-display font-bold text-white mb-1">500+</span>
-            <span className="text-xs uppercase font-sans tracking-widest text-muted-foreground">Projets</span>
-          </div>
-          <div className="w-[1px] h-10 bg-white/10 hidden sm:block" />
-          <div className="flex flex-col">
-            <span className="text-3xl md:text-4xl font-display font-bold text-white mb-1">100%</span>
-            <span className="text-xs uppercase font-sans tracking-widest text-muted-foreground">Satisfaction</span>
-          </div>
-        </motion.div>
+         <motion.div className="flex justify-center">
+  <span className="text-lg md:text-xl font-sans text-muted-foreground text-center">
+    De nombreux projets menés à bien avec la satisfaction de nos clients.
+  </span>
+</motion.div> 
       </div>
       {/* Right Column - Image (Desktop) */}
       <div className="hidden lg:block absolute top-0 right-0 w-[45%] h-full z-0">
