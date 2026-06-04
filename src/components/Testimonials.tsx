@@ -23,7 +23,7 @@ const testimonials = [
   },
   {
     name: "Sophie M.",
-    city: "Biaritz",
+    city: "Biarritz",
     work: "Rénovation cuisine & pose de carrelage",
     text: "Des artisans minutieux qui ont le souci du détail. RSBAT a su nous conseiller sur le choix des matériaux et réaliser un travail magnifique."
   }
