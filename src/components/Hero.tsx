@@ -55,14 +55,14 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="mt-16 lg:mt-24 flex items-center justify-between lg:justify-start lg:gap-16 border-t border-white/5 pt-8"
+          className="mt-16 lg:mt-24 border-t border-white/5 pt-8"
         >
-         <motion.div className="flex justify-center">
-  <span className="text-lg md:text-xl font-sans text-muted-foreground text-center">
-    De nombreux projets menés à bien avec la satisfaction de nos clients.
-  </span>
-</motion.div> 
+          <span className="text-lg md:text-xl font-sans text-muted-foreground text-center block">
+            De nombreux projets menés à bien avec la satisfaction de nos clients.
+          </span>
+        </motion.div>
       </div>
+
       {/* Right Column - Image (Desktop) */}
       <div className="hidden lg:block absolute top-0 right-0 w-[45%] h-full z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-background to-transparent z-10 w-32" />
