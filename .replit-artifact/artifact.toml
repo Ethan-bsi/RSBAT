@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "RSBAT — Construction & Rénovation"
+version = "1.0.0"
+id = "artifacts/rsbat"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20457
+
+[services.development]
+run = "pnpm --filter @workspace/rsbat run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/rsbat", "run", "build" ]
+publicDir = "artifacts/rsbat/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20457"
+BASE_PATH = "/"
