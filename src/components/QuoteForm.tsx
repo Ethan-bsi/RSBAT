@@ -96,7 +96,7 @@ export function QuoteForm() {
                 <MapPin className="w-5 h-5 text-primary mt-0.5" />
                 <div>
                   <div className="text-xs uppercase tracking-widest text-muted-foreground font-sans mb-1">Adresse</div>
-                  <div className="text-white font-sans">75000 Paris, Île-de-France</div>
+                  <div className="text-white font-sans">42 rue Monge Paris 75005, Île-de-France</div>
                 </div>
               </div>
             </div>
