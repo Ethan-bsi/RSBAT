@@ -42,7 +42,7 @@ export function Footer() {
           <div>
             <h4 className="font-display font-bold text-white uppercase tracking-widest mb-6 text-sm">Coordonnées</h4>
             <ul className="space-y-3 font-sans text-xs text-muted-foreground">
-              <li>75000 Paris, Île-de-France</li>
+              <li>42 rue Monge Paris 75005, Île-de-France</li>
               <li><span className="text-white/50">Téléphone</span> 06 12 15 39 27</li>
             </ul>
           </div>
