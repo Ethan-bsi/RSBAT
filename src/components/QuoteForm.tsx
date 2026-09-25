@@ -52,13 +52,36 @@ export function QuoteForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    setTimeout(() => {
-      setIsSubmitted(true);
-      form.reset();
-    }, 1000);
+async function onSubmit(values: z.infer<typeof formSchema>) {
+
+  try {
+
+    const response = await fetch("/api/devis", {
+      method: "POST",
+
+      headers: {
+        "Content-Type": "application/json",
+      },
+
+      body: JSON.stringify(values),
+    });
+
+    if (!response.ok) {
+      throw new Error("Erreur lors de l'envoi");
+    }
+
+    setIsSubmitted(true);
+    form.reset();
+
+  } catch (error) {
+
+    console.error("Erreur :", error);
+
+    alert(
+      "Une erreur est survenue lors de l'envoi de votre demande."
+    );
   }
+}
 
   return (
     <section id="devis" className="bg-background border-t border-white/5">
